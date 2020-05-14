@@ -17,7 +17,8 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT( /* Base */
-    LCTL(KC_Z),  LCTL(KC_X),  LCTL(KC_C), LCTL(KC_V) \
+    /* Blightness Down, Blightness Up, Mission Control, Show Desktop */
+    KC_F14,  KC_F15, LCTL(KC_UP), KC_F11 \
   )
 };
 
