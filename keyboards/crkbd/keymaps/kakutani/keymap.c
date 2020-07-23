@@ -37,9 +37,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
        KC_LCTL,   KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                         KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_QUOT,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-LSFT_T(KC_ESC),   KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSHIFT,\
+       KC_LSFT,   KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSHIFT,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LGUI,   LOWER,  KC_SPC,   KC_ENT,  RAISE,  RALT_T(KC_BSPC) \
+                                         KC_LGUI,   LOWER,  KC_SPC,   KC_ENT,  RAISE,  RALT_T(KC_BSPC) \
                                       //`--------------------------'  `--------------------------'
 
   ),
@@ -52,7 +52,7 @@ LSFT_T(KC_ESC),   KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                     
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_PLUS, KC_COMM,  KC_DOT, KC_SLSH, XXXXXXX,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LGUI,   LOWER,  KC_SPC,     KC_ENT,   RAISE, RALT_T(KC_BSPC) \
+                                         KC_LGUI,   LOWER,  KC_SPC,   KC_ENT,  RAISE,  RALT_T(KC_BSPC) \
                                       //`--------------------------'  `--------------------------'
     ),
 
@@ -64,7 +64,7 @@ LSFT_T(KC_ESC),   KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                     
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_PLUS, KC_LCBR, KC_RCBR, KC_BSLS, KC_TILD,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LGUI,   LOWER,  KC_SPC,     KC_ENT,   RAISE, RALT_T(KC_BSPC) \
+                                         KC_LGUI,   LOWER,  KC_SPC,   KC_ENT,  RAISE,  RALT_T(KC_BSPC) \
                                       //`--------------------------'  `--------------------------'
   ),
 
@@ -74,9 +74,9 @@ LSFT_T(KC_ESC),   KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                     
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
      KC_PAUSE, KC_SLCK, RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-  LCTL(LCMD(KC_Q)), RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX,                  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,\
+     KC_ESC, RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX,                  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, LCTL(LCMD(KC_Q)),\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LGUI,   LOWER,  KC_ENT,     KC_SPC,   RAISE, KC_RALT \
+                                         KC_LGUI,   LOWER,  KC_SPC,   KC_ENT,  RAISE,  RALT_T(KC_BSPC) \
                                       //`--------------------------'  `--------------------------'
   )
 };
